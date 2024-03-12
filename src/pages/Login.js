@@ -28,9 +28,9 @@ const Login = () => {
     try {
       const provider = new GoogleAuthProvider();
       await signInWithPopup(auth, provider);
-      // Redirect to dashboard or handle sign-in success
     } catch (error) {
       console.error('Error signing in with Google:', error);
+      console.log(auth);
     }
   };
 
